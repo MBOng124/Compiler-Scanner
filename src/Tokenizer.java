@@ -1,23 +1,37 @@
+import org.antlr.v4.gui.TreeViewer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.TokenStream;
+import org.antlr.v4.runtime.tree.ParseTree;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.antlr.v4.runtime.CharStreams.fromFileName;
 
 public class Tokenizer {
     public static void main(String[] args) throws IOException {
-        CharStream stream = fromFileName("input.txt");
+        CharStream stream = fromFileName("parser_test_case.txt");
         javaLexer lexer = new javaLexer(stream);
         int id;
         String token_name, id_lower;
-        for (Token token = lexer.nextToken(); token.getType() != Token.EOF; token = lexer.nextToken()) {
-            id = token.getType();
-            token_name = token.getText();
-            print_id(lexer, token_name, id);
-        }
+
+//        for (Token token = lexer.nextToken(); token.getType() != Token.EOF; token = lexer.nextToken()) {
+//            id = token.getType();
+//            token_name = token.getText();
+//            print_id(lexer, token_name, id);
+//        }
+
+        TokenStream tokenStream = new CommonTokenStream(lexer);
+        javaParser parser = new javaParser(tokenStream);
+        parser.removeErrorListeners();
+
+        ParseTree tree = parser.compilationUnit();
+        System.out.println(tree.toStringTree(parser));
+        TreeViewer viewer = new TreeViewer(Arrays.asList(parser.getRuleNames()), tree);
+        viewer.open();
     }
 
     public static void print_id(javaLexer lexer, String token_name, int id){
