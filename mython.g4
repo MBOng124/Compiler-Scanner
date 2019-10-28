@@ -28,7 +28,7 @@
  *                https://github.com/bkiers/python3-parser
  * Developed by : Bart Kiers, bart@big-o.nl
  */
-grammar Python3;
+grammar mython;
 
 // All comments that start with "///" are copy-pasted from
 // The Python Language Reference
@@ -291,39 +291,39 @@ INTEGER
  | BIN_INTEGER
  ;
 
-DEF : 'def';
-RETURN : 'return';
-RAISE : 'raise';
-FROM : 'from';
-IMPORT : 'import';
-AS : 'as';
-GLOBAL : 'global';
-NONLOCAL : 'nonlocal';
-ASSERT : 'assert';
-IF : 'if';
-ELIF : 'elif';
-ELSE : 'else';
-WHILE : 'while';
-FOR : 'for';
-IN : 'in';
-TRY : 'try';
-FINALLY : 'finally';
-WITH : 'with';
-EXCEPT : 'except';
+DEF : 'use';
+RETURN : 'ibalik';
+RAISE : 'itaas';
+FROM : 'galing sa';
+IMPORT : 'iLBC';
+AS : 'as is';
+GLOBAL : 'mundo';
+NONLOCAL : 'dilokal';
+ASSERT : 'gawin';
+IF : 'kapag';
+ELIF : 'kundi';
+ELSE : 'bahala na';
+WHILE : 'habang';
+FOR : 'para';
+IN : 'sa';
+TRY : 'subukan';
+FINALLY : 'wakas';
+WITH : 'kasama';
+EXCEPT : 'bukod';
 LAMBDA : 'lambda';
-OR : 'or';
-AND : 'and';
-NOT : 'not';
-IS : 'is';
-NONE : 'None';
-TRUE : 'True';
-FALSE : 'False';
-CLASS : 'class';
+OR : 'o';
+AND : 'tsaka';
+NOT : 'hindi';
+IS : 'ay';
+NONE : 'Wala';
+TRUE : 'Tama';
+FALSE : 'Mali';
+CLASS : 'klase';
 YIELD : 'yield';
-DEL : 'del';
-PASS : 'pass';
-CONTINUE : 'continue';
-BREAK : 'break';
+DEL : 'tang';
+PASS : 'pasa';
+CONTINUE : 'tuloy';
+BREAK : 'lumagtaw';
 ASYNC : 'async';
 AWAIT : 'await';
 
