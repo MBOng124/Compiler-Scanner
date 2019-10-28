@@ -1,8 +1,6 @@
 import org.antlr.v4.gui.TreeViewer;
-import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.TokenStream;
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.ParseCancellationException;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 import java.io.IOException;
@@ -12,9 +10,14 @@ import java.util.Arrays;
 import static org.antlr.v4.runtime.CharStreams.fromFileName;
 
 public class Tokenizer {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ParseCancellationException {
         CharStream stream = fromFileName("parser_test_case.txt");
         javaLexer lexer = new javaLexer(stream);
+        lexer.removeErrorListeners();
+        lexer.addErrorListener(ThrowingErrorListener.INSTANCE);
+
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+
         int id;
         String token_name, id_lower;
 
@@ -24,15 +27,38 @@ public class Tokenizer {
 //            print_id(lexer, token_name, id);
 //        }
 
-        TokenStream tokenStream = new CommonTokenStream(lexer);
-        javaParser parser = new javaParser(tokenStream);
+//        TokenStream tokenStream = new CommonTokenStream(lexer);
+        javaParser parser = new javaParser(tokens);
         parser.removeErrorListeners();
+        parser.addErrorListener(ThrowingErrorListener.INSTANCE);
+
+        ParserRuleContext tree1 = parser.expression();
+        javaBaseVisitor rules = new javaBaseVisitor();
+
+        rules.visit(tree1);
 
         ParseTree tree = parser.compilationUnit();
         System.out.println(tree.toStringTree(parser));
         TreeViewer viewer = new TreeViewer(Arrays.asList(parser.getRuleNames()), tree);
         viewer.open();
     }
+//
+//    public static String parse(String text) throws ParseCancellationException {
+//        MyLexer lexer = new MyLexer(new ANTLRInputStream(text));
+//        lexer.removeErrorListeners();
+//        lexer.addErrorListener(ThrowingErrorListener.INSTANCE);
+//
+//        CommonTokenStream tokens = new CommonTokenStream(lexer);
+//
+//        MyParser parser = new MyParser(tokens);
+//        parser.removeErrorListeners();
+//        parser.addErrorListener(ThrowingErrorListener.INSTANCE);
+//
+//        ParserRuleContext tree = parser.expr();
+//        MyParseRules extractor = new MyParseRules();
+//
+//        return extractor.visit(tree);
+//    }
 
     public static void print_id(javaLexer lexer, String token_name, int id){
         String id_lower = lexer.VOCABULARY.getSymbolicName(id).toLowerCase();
@@ -53,4 +79,15 @@ public class Tokenizer {
             System.out.println(token_name+" - other");
     }
 
+}
+
+class ThrowingErrorListener extends BaseErrorListener {
+
+    public static final ThrowingErrorListener INSTANCE = new ThrowingErrorListener();
+
+    @Override
+    public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e)
+            throws ParseCancellationException {
+        System.out.println("line " + line + ":" + charPositionInLine + " " + msg);
+    }
 }
