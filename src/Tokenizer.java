@@ -11,12 +11,12 @@ import static org.antlr.v4.runtime.CharStreams.fromFileName;
 
 public class Tokenizer {
     public static void main(String[] args) throws IOException, ParseCancellationException {
-        CharStream stream = fromFileName("parser_test_case.txt");
+        CharStream stream = fromFileName("parser_test_3.txt");
         javaLexer lexer = new javaLexer(stream);
         lexer.removeErrorListeners();
         lexer.addErrorListener(ThrowingErrorListener.INSTANCE);
 
-        CommonTokenStream tokens = new CommonTokenStream(lexer);
+//        TokenStream tokens = new CommonTokenStream(lexer);
 
         int id;
         String token_name, id_lower;
@@ -28,37 +28,33 @@ public class Tokenizer {
 //        }
 
 //        TokenStream tokenStream = new CommonTokenStream(lexer);
-        javaParser parser = new javaParser(tokens);
+//        javaParser parser = new javaParser(tokens);
+//        parser.removeErrorListeners();
+//        parser.addErrorListener(ThrowingErrorListener.INSTANCE);
+////
+//        ParserRuleContext tree1 = parser.expression();
+//        javaBaseVisitor rules = new javaBaseVisitor();
+//
+//        rules.visit(tree1);
+
+//        ParseTree tree = parser.compilationUnit();
+//        System.out.println(tree.toStringTree(parser));
+//        TreeViewer viewer = new TreeViewer(Arrays.asList(parser.getRuleNames()), tree);
+//        viewer.open();
+
+
+        TokenStream tokenStream = new CommonTokenStream(lexer);
+        javaParser parser = new javaParser(tokenStream);
         parser.removeErrorListeners();
         parser.addErrorListener(ThrowingErrorListener.INSTANCE);
 
-        ParserRuleContext tree1 = parser.expression();
-        javaBaseVisitor rules = new javaBaseVisitor();
-
-        rules.visit(tree1);
 
         ParseTree tree = parser.compilationUnit();
-        System.out.println(tree.toStringTree(parser));
+//        System.out.println(tree.toStringTree(parser));
         TreeViewer viewer = new TreeViewer(Arrays.asList(parser.getRuleNames()), tree);
         viewer.open();
     }
-//
-//    public static String parse(String text) throws ParseCancellationException {
-//        MyLexer lexer = new MyLexer(new ANTLRInputStream(text));
-//        lexer.removeErrorListeners();
-//        lexer.addErrorListener(ThrowingErrorListener.INSTANCE);
-//
-//        CommonTokenStream tokens = new CommonTokenStream(lexer);
-//
-//        MyParser parser = new MyParser(tokens);
-//        parser.removeErrorListeners();
-//        parser.addErrorListener(ThrowingErrorListener.INSTANCE);
-//
-//        ParserRuleContext tree = parser.expr();
-//        MyParseRules extractor = new MyParseRules();
-//
-//        return extractor.visit(tree);
-//    }
+
 
     public static void print_id(javaLexer lexer, String token_name, int id){
         String id_lower = lexer.VOCABULARY.getSymbolicName(id).toLowerCase();
@@ -81,13 +77,50 @@ public class Tokenizer {
 
 }
 
-class ThrowingErrorListener extends BaseErrorListener {
+class ThrowingErrorListener extends ConsoleErrorListener {
 
     public static final ThrowingErrorListener INSTANCE = new ThrowingErrorListener();
 
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e)
             throws ParseCancellationException {
-        System.out.println("line " + line + ":" + charPositionInLine + " " + msg);
+//        if(msg.contains("expecting {'++', '--'}"))
+//            System.out.println("line " + line + ":" + charPositionInLine + "mismatched input expecting {';'}");
+//        else if(msg.replace(' ', '\0').contains(",,"))
+//            System.out.println("line " + line + ":" + charPositionInLine + " expecting {')', value");
+//        else if(msg.matches("[0-9]* \\(\\+\\+\\) [0-9a-zA-Z]+ \\(\\+\\+\\) ") ||
+//                msg.matches("[0-9]* \\(\\+\\+\\) [0-9a-zA-Z]+ \\(\\+\\+\\) ")) {
+//
+//        }
+//        else System.out.println("line " + line + ":" + charPositionInLine + " " + msg);
+        String message = msg;
+
+        String error = msg.split("'")[1];
+
+        if(msg.contains("missing"))
+            System.out.println("Syntax Error at Line " + line + " missing " + error);
+        else if(msg.contains("extraneous input"))
+            System.out.println("Syntax Error at Line " + line + " extra character/s " + "before input " + error);
+        else if(msg.contains("mismatched input"))
+            System.out.println("Syntax Error at Line " + line + " unexpected " + error);
+        else if(msg.contains("no viable alternative at input")){
+            System.out.println("Syntax Error at Line " + line + " " + message);
+        }
+        else if(msg.contains("cannot find symbol")){
+            System.out.println("Logical Error at Line " + line + " missing symbol " + error);
+        }
+        else if(msg.contains("variable might not have been initialized")){
+            System.out.println("Syntax Error at Line" + line + "variable " + error + " is missing initialization");
+        }
+
+        else if(msg.contains("Cannot resolve symbol")){
+            System.out.println("The variable " + error + " does not exist yet and cannot be accessed");
+        }
+        else
+            System.out.println("line " + line + ":" + charPositionInLine + " " + msg);
+
+        //outofbounds
+
     }
+
 }
