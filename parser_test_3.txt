@@ -1,20 +1,19 @@
 public class Test3 {
     public void testOne() {
     	int x = 0;
-    	Scanner sc = new Scanner(System.in);
-        System.out.println("Input a number: ");
-        x = sc.nextInt();
+
+        disp("Input a number: ");
+        sin(x);
     	for(int i; i < 10; i += 1) { //syntax error #1
-    		System.out.println("Hello " +x+); //syntax error #2
-
-
+    		disp("Hello " +x+); //syntax error #2
+        }//ADDED
     	//syntax error #3 (missing curly brace)
     }
 
     public void testTwo(float x) {
     	if(x = 4) //syntax error #4
     	{
-    	    System.out.println(x is a very huge number); //syntax error #5
+    	    disp(x is a very huge number); //syntax error #5
     	}
     }
 

@@ -1,4 +1,4 @@
-// Generated from D:/Baya/CMPILER/CMPILR-Scanner/src\java.g4 by ANTLR 4.7.2
+// Generated from /Users/rachs/Documents/GitHub/Compiler-Scanner/src/java.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -1011,6 +1011,22 @@ public class javaBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements j
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitExpressionStatement(javaParser.ExpressionStatementContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitDisplayStatement(javaParser.DisplayStatementContext ctx) {
+		System.out.println("disp");
+	return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitReadStatement(javaParser.ReadStatementContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

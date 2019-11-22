@@ -1,8 +1,11 @@
-// Generated from D:/Baya/CMPILER/CMPILR-Scanner/src\java.g4 by ANTLR 4.7.2
+// Generated from /Users/rachs/Documents/GitHub/Compiler-Scanner/src/java.g4 by ANTLR 4.7.2
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
+
+import java.rmi.UnexpectedException;
+import java.util.HashMap;
 
 /**
  * This class provides an empty implementation of {@link javaListener},
@@ -10,6 +13,13 @@ import org.antlr.v4.runtime.tree.TerminalNode;
  * of the available methods.
  */
 public class javaBaseListener implements javaListener {
+
+	private HashMap<String, HashMap> class_map = new HashMap<>();
+	private HashMap<String, HashMap> function_map = new HashMap<>();
+	private HashMap<String, Integer> class_variable_map = new HashMap<>();
+	private HashMap<String, Integer> function_variable_map = new HashMap<>();
+
+	/**
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1726,6 +1736,38 @@ public class javaBaseListener implements javaListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitExpressionStatement(javaParser.ExpressionStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDisplayStatement(javaParser.DisplayStatementContext ctx) {
+//		System.out.println();
+	}
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDisplayStatement(javaParser.DisplayStatementContext ctx) {
+		if(ctx != null) {
+			String text = ctx.argumentList(0).getChild(0).getText();
+			if(text.charAt(0) == '"' && text.charAt(text.length()-1) == '"')
+				System.out.println(text.substring(1, text.length() - 1));
+		}
+	}
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterReadStatement(javaParser.ReadStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitReadStatement(javaParser.ReadStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

@@ -2,6 +2,7 @@ import org.antlr.v4.gui.TreeViewer;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.misc.ParseCancellationException;
 import org.antlr.v4.runtime.tree.ParseTree;
+import org.antlr.v4.runtime.tree.Tree;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,51 +11,34 @@ import java.util.Arrays;
 import static org.antlr.v4.runtime.CharStreams.fromFileName;
 
 public class Tokenizer {
+    public ArrayList<String> errors = new ArrayList<>();
+
     public static void main(String[] args) throws IOException, ParseCancellationException {
-        CharStream stream = fromFileName("parser_test_3.txt");
+        CharStream stream = fromFileName("parser_test_case_demo.txt");
+//
+    try {
         javaLexer lexer = new javaLexer(stream);
+        javaParser parser = new javaParser(new CommonTokenStream(lexer));
+
+        parser.addParseListener(new javaBaseListener());
+        ParseTree tree = parser.compilationUnit(); //comment to show parse tree
+
         lexer.removeErrorListeners();
         lexer.addErrorListener(ThrowingErrorListener.INSTANCE);
 
-//        TokenStream tokens = new CommonTokenStream(lexer);
+        javaLexer lexer1 = new javaLexer(stream);
+        TokenStream tokenStream = new CommonTokenStream(lexer1);
+        javaParser parser1 = new javaParser(tokenStream);
+        parser1.removeErrorListeners();
+        parser1.addErrorListener(ThrowingErrorListener.INSTANCE);
 
-        int id;
-        String token_name, id_lower;
-
-//        for (Token token = lexer.nextToken(); token.getType() != Token.EOF; token = lexer.nextToken()) {
-//            id = token.getType();
-//            token_name = token.getText();
-//            print_id(lexer, token_name, id);
-//        }
-
-//        TokenStream tokenStream = new CommonTokenStream(lexer);
-//        javaParser parser = new javaParser(tokens);
-//        parser.removeErrorListeners();
-//        parser.addErrorListener(ThrowingErrorListener.INSTANCE);
-////
-//        ParserRuleContext tree1 = parser.expression();
-//        javaBaseVisitor rules = new javaBaseVisitor();
-//
-//        rules.visit(tree1);
-
-//        ParseTree tree = parser.compilationUnit();
-//        System.out.println(tree.toStringTree(parser));
-//        TreeViewer viewer = new TreeViewer(Arrays.asList(parser.getRuleNames()), tree);
-//        viewer.open();
-
-
-        TokenStream tokenStream = new CommonTokenStream(lexer);
-        javaParser parser = new javaParser(tokenStream);
-        parser.removeErrorListeners();
-        parser.addErrorListener(ThrowingErrorListener.INSTANCE);
-
-
-        ParseTree tree = parser.compilationUnit();
-//        System.out.println(tree.toStringTree(parser));
-        TreeViewer viewer = new TreeViewer(Arrays.asList(parser.getRuleNames()), tree);
+//        ParseTree tree = parser1.compilationUnit();
+        TreeViewer viewer = new TreeViewer(Arrays.asList(parser1.getRuleNames()), tree);
         viewer.open();
+    }catch (Exception e) {
+        System.out.println(e);
     }
-
+    }
 
     public static void print_id(javaLexer lexer, String token_name, int id){
         String id_lower = lexer.VOCABULARY.getSymbolicName(id).toLowerCase();
@@ -75,52 +59,43 @@ public class Tokenizer {
             System.out.println(token_name+" - other");
     }
 
-}
+    static class ThrowingErrorListener extends ConsoleErrorListener {
 
-class ThrowingErrorListener extends ConsoleErrorListener {
+        public static final ThrowingErrorListener INSTANCE = new ThrowingErrorListener();
 
-    public static final ThrowingErrorListener INSTANCE = new ThrowingErrorListener();
+        @Override
+        public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e)
+                throws ParseCancellationException {
+            String message = msg;
 
-    @Override
-    public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e)
-            throws ParseCancellationException {
-//        if(msg.contains("expecting {'++', '--'}"))
-//            System.out.println("line " + line + ":" + charPositionInLine + "mismatched input expecting {';'}");
-//        else if(msg.replace(' ', '\0').contains(",,"))
-//            System.out.println("line " + line + ":" + charPositionInLine + " expecting {')', value");
-//        else if(msg.matches("[0-9]* \\(\\+\\+\\) [0-9a-zA-Z]+ \\(\\+\\+\\) ") ||
-//                msg.matches("[0-9]* \\(\\+\\+\\) [0-9a-zA-Z]+ \\(\\+\\+\\) ")) {
+//            System.out.println(msg);
+//            String error = msg.split("'")[1];
+//            if(msg.contains("missing"))
+//                System.out.println("Syntax Error at Line " + line + " missing " + error);
+//            else if(msg.contains("extraneous input"))
+//                System.out.println("Syntax Error at Line " + line + " extra character/s " + "before input " + error);
+//            else if(msg.contains("mismatched input"))
+//                System.out.println("Syntax Error at Line " + line + " unexpected " + error);
+//            else if(msg.contains("no viable alternative at input")){
+//                System.out.println("Syntax Error at Line " + line + " " + message);
+//            }
+//            else if(msg.contains("cannot find symbol")){
+//                System.out.println("Logical Error at Line " + line + " missing symbol " + error);
+//            }
+//            else if(msg.contains("variable might not have been initialized")){
+//                System.out.println("Syntax Error at Line" + line + "variable " + error + " is missing initialization");
+//            }
 //
-//        }
-//        else System.out.println("line " + line + ":" + charPositionInLine + " " + msg);
-        String message = msg;
+//            else if(msg.contains("Cannot resolve symbol")){
+//                System.out.println("The variable " + error + " does not exist yet and cannot be accessed");
+//            }
+//            else
+//                System.out.println("line " + line + ":" + charPositionInLine     + " " + msg);
 
-        String error = msg.split("'")[1];
 
-        if(msg.contains("missing"))
-            System.out.println("Syntax Error at Line " + line + " missing " + error);
-        else if(msg.contains("extraneous input"))
-            System.out.println("Syntax Error at Line " + line + " extra character/s " + "before input " + error);
-        else if(msg.contains("mismatched input"))
-            System.out.println("Syntax Error at Line " + line + " unexpected " + error);
-        else if(msg.contains("no viable alternative at input")){
-            System.out.println("Syntax Error at Line " + line + " " + message);
         }
-        else if(msg.contains("cannot find symbol")){
-            System.out.println("Logical Error at Line " + line + " missing symbol " + error);
-        }
-        else if(msg.contains("variable might not have been initialized")){
-            System.out.println("Syntax Error at Line" + line + "variable " + error + " is missing initialization");
-        }
-
-        else if(msg.contains("Cannot resolve symbol")){
-            System.out.println("The variable " + error + " does not exist yet and cannot be accessed");
-        }
-        else
-            System.out.println("line " + line + ":" + charPositionInLine + " " + msg);
-
-        //outofbounds
 
     }
-
 }
+
+

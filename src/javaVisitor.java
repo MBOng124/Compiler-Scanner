@@ -1,4 +1,4 @@
-// Generated from D:/Baya/CMPILER/CMPILR-Scanner/src\java.g4 by ANTLR 4.7.2
+// Generated from /Users/rachs/Documents/GitHub/Compiler-Scanner/src/java.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -867,6 +867,18 @@ public interface javaVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitExpressionStatement(javaParser.ExpressionStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link javaParser#displayStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDisplayStatement(javaParser.DisplayStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link javaParser#readStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitReadStatement(javaParser.ReadStatementContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link javaParser#statementExpression}.
 	 * @param ctx the parse tree
