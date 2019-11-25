@@ -1018,7 +1018,6 @@ public class javaBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements j
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitDisplayStatement(javaParser.DisplayStatementContext ctx) {
-		System.out.println("disp");
 		return visitChildren(ctx);
 	}
 	/**

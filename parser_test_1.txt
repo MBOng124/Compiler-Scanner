@@ -1,6 +1,15 @@
 //Convert this into your language rule syntax.
 public class Test1 {
-    public static void main() {
+    public static int main() {
     	disp("hello");
+    	int x = 10;
+    }
+
+    public void car(int c){
+        c = 1;
+    }
+
+    public int getTemp(int temp){
+        return temp;
     }
 }

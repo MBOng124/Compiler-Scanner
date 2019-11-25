@@ -46,7 +46,7 @@ public class Tokenizer {
         panel.add(viewer);
         frame.add(scroller);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(200,200);
+        frame.setSize(500,500);
         frame.setVisible(true);
 //        if(tree != null){
 //            TreeViewer viewer = new TreeViewer(Arrays.asList(parser1.getRuleNames()), tree);
