@@ -2,8 +2,10 @@ import org.antlr.v4.gui.TreeViewer;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.misc.ParseCancellationException;
 import org.antlr.v4.runtime.tree.ParseTree;
+import org.antlr.v4.runtime.tree.ParseTreeListener;
 import org.antlr.v4.runtime.tree.Tree;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +16,7 @@ public class Tokenizer {
     public ArrayList<String> errors = new ArrayList<>();
 
     public static void main(String[] args) throws IOException, ParseCancellationException {
-        CharStream stream = fromFileName("parser_test_case_demo.txt");
+        CharStream stream = fromFileName("parser_test_1.txt");
 //
     try {
         javaLexer lexer = new javaLexer(stream);
@@ -22,6 +24,9 @@ public class Tokenizer {
 
         parser.addParseListener(new javaBaseListener());
         ParseTree tree = parser.compilationUnit(); //comment to show parse tree
+
+        TypeAssignment visithor = new TypeAssignment();
+        visithor.visit(tree);
 
         lexer.removeErrorListeners();
         lexer.addErrorListener(ThrowingErrorListener.INSTANCE);
@@ -32,11 +37,25 @@ public class Tokenizer {
         parser1.removeErrorListeners();
         parser1.addErrorListener(ThrowingErrorListener.INSTANCE);
 
-//        ParseTree tree = parser1.compilationUnit();
-        TreeViewer viewer = new TreeViewer(Arrays.asList(parser1.getRuleNames()), tree);
-        viewer.open();
+        //ParseTree tree = parser1.compilationUnit();
+        JFrame frame = new JFrame("Parse Tree");
+        JPanel panel = new JPanel();
+        JScrollPane scroller = new JScrollPane(panel);
+        TreeViewer viewer = new TreeViewer(Arrays.asList(parser.getRuleNames()),tree);
+        viewer.setScale(1.5);//scale a little
+        panel.add(viewer);
+        frame.add(scroller);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(200,200);
+        frame.setVisible(true);
+//        if(tree != null){
+//            TreeViewer viewer = new TreeViewer(Arrays.asList(parser1.getRuleNames()), tree);
+//            viewer.open();
+//        }else{
+//            System.out.println("tree is empty");
+//        }
     }catch (Exception e) {
-        System.out.println(e);
+        e.printStackTrace();
     }
     }
 

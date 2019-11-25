@@ -1,19 +1,6 @@
 //Convert this into your language rule syntax.
 public class Test1 {
-    public static void main(String[] args) {
-    	int x = 0;
-    	float _veryWeirdIdentifier567 = 999.9f;
-    	boolean y = (5 > 4 && true) || (false && !(x==0));
-    	int[] myArray = new int[10];
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("What is the input: ");
-        x = sc.nextInt(); //ask for user input
-
-        System.out.println("Input: " + x); //print the input
-
-    	for(int i = 0; i < 5; i++) {
-    		System.out.println("Hello world");
-    	}
+    public static void main() {
+    	disp("hello");
     }
 }

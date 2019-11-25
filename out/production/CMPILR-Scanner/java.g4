@@ -246,6 +246,8 @@ ambiguousName
 compilationUnit
 	:	ordinaryCompilation
 	|	modularCompilation
+	|   displayStatement
+	|   readStatement
 	;
 
 ordinaryCompilation
@@ -763,10 +765,14 @@ variableInitializerList
 
 block
 	:	'{' blockStatements? '}'
+	|   displayStatement
+	|   readStatement
 	;
 
 blockStatements
 	:	blockStatement+
+	|   displayStatement
+	|   readStatement
 	;
 
 blockStatement
@@ -830,6 +836,15 @@ labeledStatementNoShortIf
 expressionStatement
 	:	statementExpression ';'
 	;
+
+displayStatement
+    :  DISP '(' argumentList argumentList+ ');' {notifyErrorListeners("Expected '+' or ')' after expression.");}
+    |  DISP '('argumentList');'
+    ;
+
+readStatement
+    :   SIN'('identifier');'
+    ;
 
 statementExpression
 	:	assignment
@@ -942,9 +957,16 @@ breakStatement
 continueStatement
 	:	'continue' identifier? ';'
 	;
-
+//d
 returnStatement
-	:	'return' expression? ';'
+    :   'return' INT ';' {notifyErrorListeners("cannot return INT please replace with an expression");}
+    |   'return' FLOAT ';' {notifyErrorListeners("cannot return FLOAT please replace with an expression");}
+    |   'return' DOUBLE ';' {notifyErrorListeners("cannot return DOUBLE please replace with an expression");}
+    |   'return' 'String' ';' {notifyErrorListeners("cannot return String please replace with an expression");}
+    |   'return' CHAR ';' {notifyErrorListeners("cannot return CHAR please replace with an expression");}
+    |   'return' BOOLEAN ';' {notifyErrorListeners("cannot return BOOL please replace with an expression");}
+	|	'return' expression? ';'
+	|	'return' expression? {notifyErrorListeners("Missing ';'");}
 	;
 
 throwStatement
@@ -1083,6 +1105,8 @@ primaryNoNewArray_lfno_primary
 	|	arrayAccess_lfno_primary
 	|	methodInvocation_lfno_primary
 	|	methodReference_lfno_primary
+	|   '(' expression ')' ')'+ {notifyErrorListeners("Too many ')'. Please reduce trailing ')'.");}
+	|   '(' expression {notifyErrorListeners("Missing ')'");}
 	;
 
 primaryNoNewArray_lfno_primary_lf_arrayAccess_lfno_primary
@@ -1237,7 +1261,9 @@ dimExpr
 	;
 
 constantExpression
-	:	expression
+	:  expression assignmentOperator
+	| postIncrementExpression expression {notifyErrorListeners("unexpected expression after '++'. Replace expression with ';'");}
+    |   postDecrementExpression expression {notifyErrorListeners("unexpected expression after '--'. Replace expression with ';'");}
 	;
 
 expression
@@ -1307,6 +1333,7 @@ conditionalOrExpression
 conditionalAndExpression
 	:	inclusiveOrExpression
 	|	conditionalAndExpression '&&' inclusiveOrExpression
+	|   conditionalAndExpression '&&' '&'+ inclusiveOrExpression {notifyErrorListeners("Too many '&'. Please reduce trsiling '&' to '&&'");}
 	;
 
 inclusiveOrExpression
@@ -1357,6 +1384,7 @@ multiplicativeExpression
 	|	multiplicativeExpression '*' unaryExpression
 	|	multiplicativeExpression '/' unaryExpression
 	|	multiplicativeExpression '%' unaryExpression
+	|   multiplicativeExpression '+' {notifyErrorListeners("Expected expression after '+'");}
 	;
 
 unaryExpression
@@ -1477,6 +1505,8 @@ TRY : 'try';
 VOID : 'void';
 VOLATILE : 'volatile';
 WHILE : 'while';
+DISP: 'disp';
+SIN: 'sin';
 UNDER_SCORE : '_';//Introduced in Java 9
 
 // §3.10.1 Integer Literals
