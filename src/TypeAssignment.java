@@ -66,10 +66,15 @@ public class TypeAssignment<T> extends javaBaseVisitor<T> {
         return visitChildren(ctx);
     }
 
-    @Override
-    public T visitAssignmentExpression(javaParser.AssignmentExpressionContext ctx) {
+    @Override public T visitAssignment(javaParser.AssignmentContext ctx) {
         if(ctx != null){
-
+            String var_name = ctx.getChild(0).getText();
+            String operator = ctx.getChild(1).getText();
+            String expression = ctx.getChild(2).getText();
+//            System.out.println(var_name + operator + expression);
+            if (operator.equals('=')) {
+//                String[] expr = expression.split();
+            }
         }
         return visitChildren(ctx);
     }

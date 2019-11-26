@@ -1,4 +1,4 @@
-// Generated from /Users/rachs/Documents/GitHub/Compiler-Scanner/src/java.g4 by ANTLR 4.7.2
+// Generated from D:/Baya/COMPILER MP/Compiler-Scanner/src\java.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -2466,6 +2466,16 @@ public interface javaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCastExpression(javaParser.CastExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link javaParser#newline}.
+	 * @param ctx the parse tree
+	 */
+	void enterNewline(javaParser.NewlineContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link javaParser#newline}.
+	 * @param ctx the parse tree
+	 */
+	void exitNewline(javaParser.NewlineContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link javaParser#identifier}.
 	 * @param ctx the parse tree

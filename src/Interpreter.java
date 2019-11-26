@@ -23,14 +23,23 @@ public class Interpreter<T> extends javaBaseVisitor<T>{
     @Override public T visitDisplayStatement(javaParser.DisplayStatementContext ctx) {
         if(ctx != null) {
             String text = ctx.argumentList(0).getChild(0).getText();
+
             if(text.charAt(0) == '"' && text.charAt(text.length()-1) == '"') {
-                    System.out.println(text.substring(1, text.length() - 1));
+
+                System.out.print(text.substring(1, text.length() - 1));
+
             } else {
-                System.out.println(variables.get(text));
+                System.out.print(variables.get(text));
             }
         }
         return visitChildren(ctx);
     }
+
+    @Override public T visitNewline(javaParser.NewlineContext ctx) {
+        System.out.println();
+        return visitChildren(ctx);
+    }
+
 
     @Override public T visitReadStatement(javaParser.ReadStatementContext ctx) {
         String var = ctx.identifier().Identifier().getSymbol().getText();

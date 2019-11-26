@@ -1,4 +1,4 @@
-// Generated from /Users/rachs/Documents/GitHub/Compiler-Scanner/src/java.g4 by ANTLR 4.7.2
+// Generated from D:/Baya/COMPILER MP/Compiler-Scanner/src\java.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -1485,6 +1485,12 @@ public interface javaVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitCastExpression(javaParser.CastExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link javaParser#newline}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNewline(javaParser.NewlineContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link javaParser#identifier}.
 	 * @param ctx the parse tree

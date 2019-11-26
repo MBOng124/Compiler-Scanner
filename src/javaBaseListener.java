@@ -1,11 +1,8 @@
-// Generated from /Users/rachs/Documents/GitHub/Compiler-Scanner/src/java.g4 by ANTLR 4.7.2
+// Generated from D:/Baya/COMPILER MP/Compiler-Scanner/src\java.g4 by ANTLR 4.7.2
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
-
-import java.rmi.UnexpectedException;
-import java.util.HashMap;
 
 /**
  * This class provides an empty implementation of {@link javaListener},
@@ -13,10 +10,6 @@ import java.util.HashMap;
  * of the available methods.
  */
 public class javaBaseListener implements javaListener {
-
-
-
-	/**
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1738,17 +1731,13 @@ public class javaBaseListener implements javaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDisplayStatement(javaParser.DisplayStatementContext ctx) {
-//		System.out.println();
-	}
+	@Override public void enterDisplayStatement(javaParser.DisplayStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDisplayStatement(javaParser.DisplayStatementContext ctx) {
-
-	}
+	@Override public void exitDisplayStatement(javaParser.DisplayStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1760,9 +1749,7 @@ public class javaBaseListener implements javaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitReadStatement(javaParser.ReadStatementContext ctx) {
-		System.out.println("falsknfa");
-	}
+	@Override public void exitReadStatement(javaParser.ReadStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2975,6 +2962,18 @@ public class javaBaseListener implements javaListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitCastExpression(javaParser.CastExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNewline(javaParser.NewlineContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNewline(javaParser.NewlineContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

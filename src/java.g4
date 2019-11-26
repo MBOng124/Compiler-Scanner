@@ -248,6 +248,7 @@ compilationUnit
 	|	modularCompilation
 	|   displayStatement
 	|   readStatement
+	|   newline
 	;
 
 ordinaryCompilation
@@ -1449,6 +1450,13 @@ castExpression
 	|	'(' referenceType additionalBound* ')' lambdaExpression
 	;
 
+newline
+    : NEWLINE '();'
+    | NEWLINE {notifyErrorListeners("Expected '()' and/or ';' after expression.");}
+    | NEWLINE ';' {notifyErrorListeners("Expected '()' in expression.");}
+    | NEWLINE '()' {notifyErrorListeners("Expected ';' after expression.");}
+    | NEWLINE '('argumentList');' {notifyErrorListeners("Expected '+' or ')' after expression.");}
+    ;
 // LEXER
 
 identifier : Identifier | 'to' | 'module' | 'open' | 'with' | 'provides' | 'uses' | 'opens' | 'requires' | 'exports';
@@ -1507,6 +1515,7 @@ VOLATILE : 'volatile';
 WHILE : 'while';
 DISP: 'disp';
 SIN: 'sin';
+NEWLINE:'newline';
 UNDER_SCORE : '_';//Introduced in Java 9
 
 // §3.10.1 Integer Literals
