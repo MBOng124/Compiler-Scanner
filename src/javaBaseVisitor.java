@@ -1026,7 +1026,8 @@ public class javaBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements j
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitReadStatement(javaParser.ReadStatementContext ctx) { return visitChildren(ctx); }
+	@Override public T visitReadStatement(javaParser.ReadStatementContext ctx) {
+		return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1565,7 +1566,9 @@ public class javaBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements j
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitAssignmentExpression(javaParser.AssignmentExpressionContext ctx) { return visitChildren(ctx); }
+	@Override public T visitAssignmentExpression(javaParser.AssignmentExpressionContext ctx) {
+		return visitChildren(ctx);
+	}
 	/**
 	 * {@inheritDoc}
 	 *

@@ -14,10 +14,7 @@ import java.util.HashMap;
  */
 public class javaBaseListener implements javaListener {
 
-	private HashMap<String, HashMap> class_map = new HashMap<>();
-	private HashMap<String, HashMap> function_map = new HashMap<>();
-	private HashMap<String, Integer> class_variable_map = new HashMap<>();
-	private HashMap<String, Integer> function_variable_map = new HashMap<>();
+
 
 	/**
 	/**
@@ -1750,11 +1747,7 @@ public class javaBaseListener implements javaListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDisplayStatement(javaParser.DisplayStatementContext ctx) {
-		if(ctx != null) {
-			String text = ctx.argumentList(0).getChild(0).getText();
-			if(text.charAt(0) == '"' && text.charAt(text.length()-1) == '"')
-				System.out.println(text.substring(1, text.length() - 1));
-		}
+
 	}
 	/**
 	 * {@inheritDoc}
@@ -1767,7 +1760,9 @@ public class javaBaseListener implements javaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitReadStatement(javaParser.ReadStatementContext ctx) { }
+	@Override public void exitReadStatement(javaParser.ReadStatementContext ctx) {
+		System.out.println("falsknfa");
+	}
 	/**
 	 * {@inheritDoc}
 	 *

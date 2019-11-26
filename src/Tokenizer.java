@@ -9,6 +9,7 @@ import javax.swing.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 import static org.antlr.v4.runtime.CharStreams.fromFileName;
 
@@ -17,16 +18,15 @@ public class Tokenizer {
 
     public static void main(String[] args) throws IOException, ParseCancellationException {
         CharStream stream = fromFileName("parser_test_1.txt");
+        HashMap<String, String> var_types;
+        HashMap<String, String> variables;
+        HashMap<String, String> function_declaration;
+        HashMap<String, String> function_definition;
 //
     try {
         javaLexer lexer = new javaLexer(stream);
         javaParser parser = new javaParser(new CommonTokenStream(lexer));
 
-        parser.addParseListener(new javaBaseListener());
-        ParseTree tree = parser.compilationUnit(); //comment to show parse tree
-
-        TypeAssignment visithor = new TypeAssignment();
-        visithor.visit(tree);
 
         lexer.removeErrorListeners();
         lexer.addErrorListener(ThrowingErrorListener.INSTANCE);
@@ -36,6 +36,18 @@ public class Tokenizer {
         javaParser parser1 = new javaParser(tokenStream);
         parser1.removeErrorListeners();
         parser1.addErrorListener(ThrowingErrorListener.INSTANCE);
+
+        ParseTree tree = parser.compilationUnit(); //comment to show parse tree
+        TypeAssignment visithor = new TypeAssignment();
+        visithor.visit(tree);
+        function_declaration = visithor.getFunction_declaration();
+        function_definition = visithor.getFunction_definition();
+        variables = visithor.getVariables();
+        var_types =visithor.getVar_types();
+        Interpreter interpreter = new Interpreter(var_types, variables, function_declaration, function_definition);
+        interpreter.visit(tree);
+
+
 
         //ParseTree tree = parser1.compilationUnit();
         JFrame frame = new JFrame("Parse Tree");

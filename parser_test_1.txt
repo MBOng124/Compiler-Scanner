@@ -1,8 +1,10 @@
 //Convert this into your language rule syntax.
 public class Test1 {
     public static int main() {
-    	disp("hello");
-    	int x = 10;
+        float x;
+        x=10;
+        sin(x);
+    	disp(x);
     }
 
     public void car(int c){

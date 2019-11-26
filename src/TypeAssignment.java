@@ -20,6 +20,30 @@ public class TypeAssignment<T> extends javaBaseVisitor<T> {
         class_functions = new HashMap<>();
     }
 
+    public HashMap<String, String> getVar_types() {
+        return var_types;
+    }
+
+    public HashMap<String, String> getVariables() {
+        return variables;
+    }
+
+    public HashMap<String, String> getFunction_declaration() {
+        return function_declaration;
+    }
+
+    public HashMap<String, String> getFunction_definition() {
+        return function_definition;
+    }
+
+    public HashMap<String, String> getClass_functions() {
+        return class_functions;
+    }
+
+    public HashMap<String, String> getClasses() {
+        return classes;
+    }
+
     @Override
     public T visitMethodDeclaration(javaParser.MethodDeclarationContext ctx) {
         if(ctx != null){
@@ -37,6 +61,14 @@ public class TypeAssignment<T> extends javaBaseVisitor<T> {
             }else{
                 //print error message
             }
+
+        }
+        return visitChildren(ctx);
+    }
+
+    @Override
+    public T visitAssignmentExpression(javaParser.AssignmentExpressionContext ctx) {
+        if(ctx != null){
 
         }
         return visitChildren(ctx);
