@@ -1,19 +1,11 @@
 //Convert this into your language rule syntax.
 public class Test1 {
     public static void main(string[] args) {
-        //float x;
-        //x=10;
-        //sin(x);
-      //  x = x+5;
-    	//disp(x);
 
-    	string str;
+    	string str = "test";
         disp("Please enter your name: ");
-        //newline();
-        sin(str);
-        //disp("Hello ");
-        disp(str);
-        //disp(4);
+        nl();
+        disp(312312awda);
     }
 
     public void car(int c){

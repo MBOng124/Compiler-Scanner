@@ -122,7 +122,7 @@ public class Tokenizer {
 //            }
 //            else
 //                System.out.println("line " + line + ":" + charPositionInLine     + " " + msg);
-
+            System.out.println(msg + "WARa");
 
         }
 
