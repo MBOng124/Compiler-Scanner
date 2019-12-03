@@ -2,10 +2,281 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="addcbbb4-2403-4a80-8845-a718c8866bc5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_2_complete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_2_complete.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/CMPILR-Scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CMPILR-Scanner.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser_test_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser_test_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interpreter.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/Tokenizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaBaseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaBaseVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaLexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AdditionalBoundContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AdditiveExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AmbiguousNameContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AndExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AnnotationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AnnotationTypeBodyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AnnotationTypeDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AnnotationTypeElementDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AnnotationTypeElementModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AnnotationTypeMemberDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ArgumentListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ArrayAccessContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ArrayAccess_lf_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ArrayAccess_lfno_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ArrayCreationExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ArrayInitializerContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ArrayTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AssertStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AssignmentContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AssignmentExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$AssignmentOperatorContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$BasicForStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$BasicForStatementNoShortIfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$BlockContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$BlockStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$BlockStatementsContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$BreakStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$CastExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$CatchClauseContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$CatchFormalParameterContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$CatchTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$CatchesContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassBodyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassBodyDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassInstanceCreationExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassInstanceCreationExpression_lf_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassInstanceCreationExpression_lfno_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassLiteralContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassMemberDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassType_lf_classOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ClassType_lfno_classOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$CompilationUnitContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConditionalAndExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConditionalExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConditionalOrExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConstantDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConstantExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConstantModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConstructorBodyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConstructorDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConstructorDeclaratorContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ConstructorModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ContinueStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$DefaultValueContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$DimExprContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$DimExprsContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$DimsContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$DoStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ElementValueArrayInitializerContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ElementValueContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ElementValueListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ElementValuePairContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ElementValuePairListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EmptyStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EnhancedForStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EnhancedForStatementNoShortIfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EnumBodyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EnumBodyDeclarationsContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EnumConstantContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EnumConstantListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EnumConstantModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EnumConstantNameContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EnumDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$EqualityExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ExceptionTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ExceptionTypeListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ExclusiveOrExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ExplicitConstructorInvocationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ExpressionNameContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ExpressionStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ExtendsInterfacesContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$FieldAccessContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$FieldAccess_lf_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$FieldAccess_lfno_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$FieldDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$FieldModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$Finally_Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$FloatingPointTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ForInitContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ForStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ForStatementNoShortIfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ForUpdateContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$FormalParameterContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$FormalParameterListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$FormalParametersContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$IdentifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$IfThenElseStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$IfThenElseStatementNoShortIfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$IfThenStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ImportDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InclusiveOrExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InferredFormalParameterListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InstanceInitializerContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$IntegralTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceBodyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceMemberDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceMethodDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceMethodModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceTypeListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceType_lf_classOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$InterfaceType_lfno_classOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LabeledStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LabeledStatementNoShortIfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LambdaBodyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LambdaExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LambdaParametersContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LastFormalParameterContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LeftHandSideContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LiteralContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LocalVariableDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$LocalVariableDeclarationStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MarkerAnnotationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodBodyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodDeclaratorContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodHeaderContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodInvocationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodInvocation_lf_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodInvocation_lfno_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodNameContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodReferenceContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodReference_lf_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MethodReference_lfno_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ModularCompilationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ModuleDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ModuleDirectiveContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ModuleNameContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$MultiplicativeExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$NormalAnnotationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$NormalClassDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$NormalInterfaceDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$NumericTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$OrdinaryCompilationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PackageDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PackageModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PackageNameContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PackageOrTypeNameContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PostDecrementExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PostDecrementExpression_lf_postfixExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PostIncrementExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PostIncrementExpression_lf_postfixExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PostfixExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PreDecrementExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PreIncrementExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryNoNewArrayContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryNoNewArray_lf_arrayAccessContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryNoNewArray_lf_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryNoNewArray_lf_primary_lf_arrayAccess_lf_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryNoNewArray_lf_primary_lfno_arrayAccess_lf_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryNoNewArray_lfno_arrayAccessContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryNoNewArray_lfno_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryNoNewArray_lfno_primary_lf_arrayAccess_lfno_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primaryContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$PrimitiveTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ReceiverParameterContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ReferenceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$RelationalExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$RequiresModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ResourceContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ResourceListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ResourceSpecificationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ResultContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ReturnStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ShiftExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SimpleTypeNameContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SingleElementAnnotationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SingleStaticImportDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SingleTypeImportDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$StatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$StatementExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$StatementExpressionListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$StatementNoShortIfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$StatementWithoutTrailingSubstatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$StaticImportOnDemandDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$StaticInitializerContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SuperclassContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SuperinterfacesContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SwitchBlockContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SwitchBlockStatementGroupContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SwitchLabelContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SwitchLabelsContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SwitchStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$SynchronizedStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$ThrowStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$Throws_Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TryStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TryWithResourcesStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeArgumentContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeArgumentListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeArgumentsContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeArgumentsOrDiamondContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeBoundContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeImportOnDemandDeclarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeNameContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeParameterContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeParameterListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeParameterModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeParametersContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$TypeVariableContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannArrayTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannClassOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannClassTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannClassType_lf_unannClassOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannClassType_lfno_unannClassOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannInterfaceType_lf_unannClassOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannInterfaceType_lfno_unannClassOrInterfaceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannPrimitiveTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannReferenceTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannTypeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnannTypeVariableContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnaryExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$UnaryExpressionNotPlusMinusContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$VariableAccessContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$VariableDeclaratorContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$VariableDeclaratorIdContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$VariableDeclaratorListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$VariableInitializerContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$VariableInitializerListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$VariableModifierContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$WhileStatementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$WhileStatementNoShortIfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$WildcardBoundsContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser$WildcardContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPILR-Scanner/javaVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser_test_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser_test_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tokenizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/java.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/java.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/java.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaVisitor.java" afterDir="false" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,10 +304,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tokenizer.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1054">
               <caret line="92" column="68" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
+=======
+            <state relative-caret-position="439">
+              <caret line="98" column="51" lean-forward="true" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
               <folding>
                 <element signature="method#print_id#0;class#Tokenizer#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="118" column="9" lean-forward="true" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TypeAssignment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1234#1235#0" expanded="true" />
+                <element signature="e#1264#1265#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +352,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="118" column="9" lean-forward="true" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+            <state relative-caret-position="272">
+              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,19 +363,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/javaBaseVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
               <caret line="1656" column="119" selection-start-line="1656" selection-start-column="4" selection-end-line="1656" selection-end-column="119" />
+=======
+        <entry file="file://$PROJECT_DIR$/parser_test_1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/parser_test_1.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/SemanticAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
             </state>
           </provider>
         </entry>
@@ -75,8 +397,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java.g4">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="13481">
               <caret line="855" column="16" selection-start-line="855" selection-start-column="8" selection-end-line="855" selection-end-column="16" />
+=======
+            <state relative-caret-position="197">
+              <caret line="841" column="49" selection-start-line="841" selection-start-column="49" selection-end-line="841" selection-end-column="49" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
             </state>
           </provider>
         </entry>
@@ -119,9 +446,15 @@
       <find>NEWLINE</find>
       <find>newl</find>
       <find>read</find>
+<<<<<<< HEAD
       <find>visitMethod</find>
       <find>visitAdditive</find>
       <find>methodIn</find>
+=======
+      <find>newline</find>
+      <find>blockstate</find>
+      <find>'+'</find>
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,15 +471,24 @@
         <option value="$PROJECT_DIR$/src/Visithor.java" />
         <option value="$PROJECT_DIR$/src/SemanticAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/javaParser.java" />
-        <option value="$PROJECT_DIR$/src/Tokenizer.java" />
         <option value="$PROJECT_DIR$/src/javaBaseListener.java" />
         <option value="$PROJECT_DIR$/src/javaBaseVisitor.java" />
         <option value="$PROJECT_DIR$/src/TypeAssignment.java" />
         <option value="$PROJECT_DIR$/src/java.g4" />
         <option value="$PROJECT_DIR$/parser_test_1.txt" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/src/Tokenizer.java" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
         <option value="$PROJECT_DIR$/src/Interpreter.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
@@ -176,14 +518,23 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574757713487" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/EvalEx-2.0.jar!/" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575144684003" />
+    <property name="last_opened_file_path" value="C:/javalib/antlr-4.7.2-complete.jar!/" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -193,6 +544,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rachs\Documents\GitHub\Compiler-Scanner\src" />
       <recent name="D:\Baya\COMPILER MP\Compiler-Scanner\src" />
       <recent name="D:\Baya\CMPILER\CMPILR-Scanner\src" />
     </key>
@@ -249,11 +601,16 @@
       <workItem from="1574663127289" duration="4151000" />
       <workItem from="1574689275172" duration="600000" />
       <workItem from="1574697585753" duration="4869000" />
+<<<<<<< HEAD
       <workItem from="1574742905006" duration="11157000" />
       <workItem from="1574796271898" duration="292000" />
       <workItem from="1574881711446" duration="1825000" />
       <workItem from="1575276720470" duration="3485000" />
       <workItem from="1575362667843" duration="6250000" />
+=======
+      <workItem from="1574742905006" duration="10350000" />
+      <workItem from="1575135297196" duration="6155000" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
     </task>
     <task id="LOCAL-00001" summary="Error to String">
       <created>1572292637280</created>
@@ -266,10 +623,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="61788000" />
+=======
+    <option name="totallyTimeSpent" value="55284000" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -277,7 +638,11 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18993288" />
+=======
+      <window_info content_ui="combo" id="Project" order="5" weight="0.26385927" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Tool Output" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -288,7 +653,7 @@
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.34419262" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3069705" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.32719547" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.32640332" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -312,7 +677,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26107383" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.26385927" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Tool Output" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -320,10 +685,10 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="ANTLR Preview" order="5" weight="0.47450426" />
-      <window_info anchor="bottom" id="Terminal" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.34419262" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3069705" />
-      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.32719547" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.32640332" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -344,6 +709,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Error to String" />
@@ -404,13 +772,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/javaLib/antlr-4.7.2-complete.jar!/org/antlr/v4/gui/TreeViewer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/Program Files/javaLib/antlr-4.7.2-complete.jar!/org/antlr/v4/gui/TreeViewer.class" />
     <entry file="file://$PROJECT_DIR$/src/javaParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -429,17 +791,37 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="26" />
+=======
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Override.java" />
+    <entry file="file://$PROJECT_DIR$/src/javaBaseVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="1740" column="97" selection-start-line="1740" selection-start-column="4" selection-end-line="1740" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SemanticAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TypeAssignment.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="624">
           <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+=======
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#757#758#0" expanded="true" />
@@ -458,6 +840,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/SemanticAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -469,6 +852,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="92" column="68" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Tokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="98" column="51" lean-forward="true" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
           <folding>
             <element signature="method#print_id#0;class#Tokenizer#0" />
           </folding>
@@ -477,13 +866,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java.g4">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="13481">
           <caret line="855" column="16" selection-start-line="855" selection-start-column="8" selection-end-line="855" selection-end-column="16" />
+=======
+        <state relative-caret-position="197">
+          <caret line="841" column="49" selection-start-line="841" selection-start-column="49" selection-end-line="841" selection-end-column="49" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser_test_1.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="255">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
@@ -493,13 +888,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="1656" column="119" selection-start-line="1656" selection-start-column="4" selection-end-line="1656" selection-end-column="119" />
+=======
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="223">
           <caret line="118" column="9" lean-forward="true" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+=======
+        <state relative-caret-position="272">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+>>>>>>> 0ec0e959335585f7e23c0e5ab2d8016a52c98ab3
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -547,7 +951,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>11</last-edited>
+          <last-edited>9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

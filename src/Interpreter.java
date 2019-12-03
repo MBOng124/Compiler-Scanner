@@ -36,12 +36,22 @@ public class Interpreter<T> extends javaBaseVisitor<T>{
 
                 System.out.print(text.substring(1, text.length() - 1));
 
+            } else if(text.matches("^\\d+(.\\d+)?$")) {
+                text = text.replaceAll(" ", "");
+                try {
+                    Double.parseDouble(text);
+                    System.out.println(text);
+                } catch (Exception e) {
+                    throw new Error("Invalid parameter for disp(). Expected String or numerals.");
+                }
             } else {
                 System.out.print(variables.get(text));
             }
         }
         return visitChildren(ctx);
     }
+
+
 
     @Override public T visitNewline(javaParser.NewlineContext ctx) {
         System.out.println();

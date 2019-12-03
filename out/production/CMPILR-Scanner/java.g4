@@ -248,7 +248,6 @@ compilationUnit
 	|	modularCompilation
 	|   displayStatement
 	|   readStatement
-	|   newline
 	;
 
 ordinaryCompilation
@@ -780,6 +779,7 @@ blockStatement
 	:	localVariableDeclarationStatement
 	|	classDeclaration
 	|	statement
+	|   newline
 	;
 
 localVariableDeclarationStatement
@@ -1515,7 +1515,7 @@ VOLATILE : 'volatile';
 WHILE : 'while';
 DISP: 'disp';
 SIN: 'sin';
-NEWLINE:'newline';
+NEWLINE:'nl';
 UNDER_SCORE : '_';//Introduced in Java 9
 
 // §3.10.1 Integer Literals
