@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="antlr-4.7.2-complete" level="project" />
+    <orderEntry type="library" name="EvalEx-2.0" level="project" />
   </component>
 </module>

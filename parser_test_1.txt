@@ -1,26 +1,27 @@
 //Convert this into your language rule syntax.
 public class Test1 {
     public static void main(string[] args) {
-        //float x;
-        //x=10;
-        //sin(x);
-      //  x = x+5;
-    	//disp(x);
+        int x = 3;
+        x = 5+5+x;
+        if(x==5){
+            x = 10;
+        }else if(x==6){
+            x = 15;
+        }else{
+            x = 0;
+        }
 
-    	string str;
-        disp("Please enter your name: ");
-        //newline();
-        sin(str);
-        //disp("Hello ");
-        disp(str);
-        //disp(4);
     }
 
-    public void car(int c){
-        c = 1;
-    }
 
     public int getTemp(int temp){
         return temp;
     }
+
+     public void car(int c){
+            c = 1;
+            while(c>0){
+                c--;
+            }
+     }
 }
