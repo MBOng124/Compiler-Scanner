@@ -17,7 +17,7 @@ public class Tokenizer {
     public ArrayList<String> errors = new ArrayList<>();
 
     public static void main(String[] args) throws IOException, ParseCancellationException {
-        CharStream stream = fromFileName("parser_test_1.txt");
+        CharStream stream = fromFileName("parser_test_2.txt");
         HashMap<String, String> var_types;
         HashMap<String, String> variables;
         HashMap<String, String> function_declaration;

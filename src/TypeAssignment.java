@@ -1,5 +1,7 @@
+import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class TypeAssignment<T> extends javaBaseVisitor<T> {
@@ -7,6 +9,8 @@ public class TypeAssignment<T> extends javaBaseVisitor<T> {
     HashMap<String, String> variables;
     HashMap<String, String> function_declaration;
     HashMap<String, String> function_definition;
+    HashMap<String, ArrayList<String>> var_arrays;
+    HashMap<String, String> var_type_arrays;
     /*FOR OOP*/
     HashMap<String, String> class_functions;
     HashMap<String, String> classes;
@@ -16,6 +20,8 @@ public class TypeAssignment<T> extends javaBaseVisitor<T> {
         variables = new HashMap<>();
         function_declaration = new HashMap<>();
         function_definition = new HashMap<>();
+        var_arrays = new HashMap<>();
+        var_type_arrays = new HashMap<>();
         classes = new HashMap<>();
         class_functions = new HashMap<>();
     }
@@ -58,8 +64,8 @@ public class TypeAssignment<T> extends javaBaseVisitor<T> {
             }else if(!type.equalsIgnoreCase(function_declaration.get(name))){
                 function_definition.put(name, body);
                 function_declaration.put(name, type);
-            }else{
-                //print error message
+            }else if(type.equalsIgnoreCase(function_declaration.get(name))){
+                //print error message for duplicate function
             }
 
         }
@@ -84,6 +90,7 @@ public class TypeAssignment<T> extends javaBaseVisitor<T> {
         if(ctx != null){
             String var = ctx.localVariableDeclaration().getChild(1).getText();
             String dtype = ctx.localVariableDeclaration().getChild(0).getText();
+            System.out.println(dtype);
             if(var.contains("=")){//variable is initialized
                 String[] split = var.split("=");
                 if(!variables.containsKey(split[0])){

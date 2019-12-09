@@ -1490,6 +1490,7 @@ IMPLEMENTS : 'implements';
 IMPORT : 'import';
 INSTANCEOF : 'instanceof';
 INT : 'int';
+LIST : 'list';
 INTERFACE : 'interface';
 LONG : 'long';
 NATIVE : 'native';
