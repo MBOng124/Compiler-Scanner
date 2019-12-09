@@ -1,0 +1,119 @@
+public class Test {
+
+    /* Test for print */
+    public void testOne() {
+        string input;
+
+        disp("Please enter your name: ");
+        scan(input);
+
+        disp("Hello ");
+        disp(input);
+        disp("!");
+    }
+
+    /* Test for arithmetic expressions */
+    public void testTwo() {
+        int base, height;
+        disp("Enter base: ");
+        scan(base);
+        disp("Enter height:");
+        scan(height);
+
+        disp("The area of the triangle is ");
+        disp(base * height / 2);
+
+    }
+
+    /* Test for conditional statements */
+    public void testThree() {
+        int temp;
+
+        disp("Enter temperature: ");
+        scan(temp);
+
+        if(temp < 20) {
+            disp("IT'S COLD");
+        }
+        else if(temp > 30) {
+            disp("IT'S HOT");
+        }
+        else {
+            disp("COOL CLIMATE!");
+        }
+    }
+
+    /*  Test for:
+    /*  conditional statements  */
+    /*  arithmetic expressions  */
+    /*  logical expressions     */
+    public void testFour() {
+        float assign1, assign2, assign3, grade;
+
+        disp("Enter assignment 1 grade: ");
+        scan(assign1);
+
+        disp("Enter assignment 2 grade: ");
+        scan(assign2);
+
+        disp("Enter assignment 3 grade: ");
+        scan(assign3);
+
+        assign1 = assign1 * 0.40;
+        assign2 = assign2 * 0.35;
+        assign3 = assign3 * 0.25;
+
+        grade = assign1 + assign2 + assign3;
+
+        disp("Your grade is: ");
+        disp(grade);
+        disp("Your DLSU grade is: ");
+        if(grade >= 94) {
+            disp("4.0.");
+        }
+        else if(grade >= 89) {
+            disp("3.5.");
+        }
+        else if(grade >= 83) {
+            disp("3.0.");
+        }
+        else if(grade >= 78) {
+            disp("2.5.");
+        }
+        else if(grade >= 72) {
+            disp("2.0.");
+        }
+        else if(grade >= 66) {
+            disp("1.5.");
+        }
+        else if(grade >= 60) {
+            disp("1.0.");
+        }
+        else {
+            disp("0.0.");
+        }
+    }
+
+    /* Test for loops */
+    public void testFive() {
+        int input, sum = 0;
+
+        while(input != -1) {
+            disp("Gimme number: ");
+            scan(input);
+
+            sum += input;
+        }
+
+        disp("Total: ");
+        disp(sum);
+    }
+
+    public void main() {
+        testOne();
+        testTwo();
+        testThree();
+        testFour();
+        testFive();
+    }
+}
